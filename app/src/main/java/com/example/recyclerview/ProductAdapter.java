@@ -44,7 +44,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
         shortDescription.setText(product.getShortDescription());
         quantity.setText(String.format(Locale.getDefault(),"%d", product.getQuantity()));
         price.setText(String.format(Locale.getDefault(),"%.2f", (product.getPrice() * product.getQuantity())));
-        image.setImageResource(R.drawable.ic_launcher_foreground);
+        image.setImageResource(R.drawable.product);
 
         holder.position = holder.getAdapterPosition();
     }
