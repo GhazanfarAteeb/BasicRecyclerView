@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         productList = new ArrayList<>();
 
         for (int i = 0; i<20;i++)
-            productList.add(new Product(i+1,"Product 1", 100,10,"This is a product"));
+            productList.add(new Product(i+1,"Product", 100,10,"This is a product"));
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setAdapter(new ProductAdapter(productList,MainActivity.this));
